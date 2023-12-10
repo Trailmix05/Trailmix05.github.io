@@ -92,7 +92,7 @@ img {
 #content-wrapper {
     padding-left: var(--sidbar-width);
     background: linear-gradient(rgb(0, 76, 76, 0.2), rgb(0, 76, 76, 0.2)), url(../img/background.jpg);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
