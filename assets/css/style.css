@@ -91,6 +91,9 @@ img {
 /* CONTENT WRAPPER */
 #content-wrapper {
     padding-left: var(--sidbar-width);
+    background: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 
