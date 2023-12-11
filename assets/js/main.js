@@ -1,8 +1,0 @@
-var language = {
-    eng: {
-
-    },
-    fr: {
-
-    }
-};

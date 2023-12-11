@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
-    <body>
+    <body id="page-top" onload="translate('fr','lng-tag')">
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container flex-lg-column">
@@ -28,27 +28,27 @@
                     <ul class="navbar-nav ms-auto flex-lg-column">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page"
-                                href="#accueil">Accueil</a>
+                                href="#accueil" lng-tag="landing">Accueil</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page"
-                                href="#perso">Qui suis-je?</a>
+                                href="#perso" lng-tag="whoami">Qui suis-je?</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page"
-                                href="#pp">Projets Professionnels</a>
+                                href="#pp" lng-tag="pp">Projets Professionnels</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page"
-                                href="#comp">Compétences</a>
+                                href="#comp" lng-tag="skills">Compétences</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page"
-                                href="#cv">CV</a>
+                                href="#cv" lng-tag="cv">CV</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page"
-                                href="#contact">Contact</a>
+                                href="#contact" lng-tag="contact">Contact</a>
                         </li>
                         <li class="nav-item">
                                 <a class="nav-link active" href="#" aria-current="page" Language="english">ENG</a></span>
@@ -73,11 +73,11 @@
                             <h1 class="display-4 fw-bold">Hello! I'm <span
                                     class="text-brand">Zachary Ivars</span>, an
                                 IT student!</h1>
-                            <p class="lead mt-2 mb-4">Je suis Zachary Ivars, un
+                            <p class="lead mt-2 mb-4" lng-tag="lead">Je suis Zachary Ivars, un
                                 étudiant en BUT Informatique à l'IUT de Blagnac</p>
-                            <a href="#perso" class="btn btn-brand me-3">Apprennez
+                            <a href="#perso" class="btn btn-brand me-3" lng-tag="about_me_button">Apprennez
                                 en plus sur moi</a>
-                            <a href="#contact" class="link-custom">Contactez
+                            <a href="#contact" class="link-custom" lng-tag="link-custom">Contactez
                                 moi</a>
                         </div>
                     </div>
@@ -91,9 +91,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8">
-                            <h5>QUI SUIS-JE?</h5>
-                            <h1>Un peu sur moi</h1>
-                            <p>Je suis un jeune étudiant, motivé et passioné par l'informatique, à l'IUT
+                            <h5 lng-tag="whoami">QUI SUIS-JE?</h5>
+                            <h1 lng-tag="sub_whoami">Un peu sur moi</h1>
+                            <p lng-tag="about_me">Je suis un jeune étudiant, motivé et passioné par l'informatique, à l'IUT
                                 de Blagnac.
                                 <br>Avant, j'étais aux États-Unis, de
                                 mes 4 ans jusqu'à mes 13 ans. Ce vécu m'a
@@ -126,7 +126,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8">
-                            <h5>PROJETS PROFESSIONNELS</h5>
+                            <h5 lng-tag="objectives">PROJETS PROFESSIONNELS</h5>
                             <p>Mon objectif est de devenir un Pentester/Hackeur
                                 Éthique [Cliquez <a
                                     href="http://www.cidj.com/metiers/pentester"
@@ -158,11 +158,11 @@
                                     </ul>
                                 </ul>
                             </p>
-                            <h6 class="mt-4">PROJETS PERSONNELS</h6>
+                            <h6 class="mt-4" lng-tag="personal">PROJETS PERSONNELS</h6>
                             <p>
                                 <ul>
                                     <li><a href="./Terminal/index.html"
-                                            target="_blank">Site Web version
+                                            target="_blank" lng-tag="terminal">Site Web version
                                             TERMINAL</a></li>
                                     <li>À venir...</li>
                                 </ul>
@@ -178,8 +178,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8">
-                            <h5>COMPETENCES</h5>
-                            <p>À venir...</p>
+                            <h5 lng-tag="skills">COMPETENCES</h5>
+                            <p lng-tag="coming_soon">À venir...</p>
                         </div>
                     </div>
                 </div>
@@ -191,8 +191,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8">
-                            <h5>CV</h5>
-                            <p>À venir...</p>
+                            <h5 lng-tag="cv">CV</h5>
+                            <p lng-tag="coming_soon">À venir...</p>
                         </div>
                     </div>
                 </div>
@@ -204,14 +204,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8">
-                            <h5>CONTACTS</h5>
-                            <h1>Contactez-moi par:</h1>
+                            <h5 lng-tag="contact">CONTACTS</h5>
+                            <h1 lng-tag="contactme">Contactez-moi par:</h1>
                             <ul>
                                 <li>Téléphone(si je ne réponds pas veuillez
                                     laissez un message): +33 06 95 00 33 72</li>
-                                <li>Linkedin: <a
-                                        href="https://www.linkedin.com/in/zachary-ivars/"
-                                        target="_blank">linkedin/zachary-ivars</a></li>
+                                <li>Linkedin: <a href="https://www.linkedin.com/in/zachary-ivars/" target="_blank">linkedin/zachary-ivars</a></li>
                                 <li>Courrier éléctronique:  zacharyivars@icloud.com</li>
                                 <li>Discord: _trailmix</li>
                             </ul>
@@ -225,5 +223,7 @@
         <script src="./assets/js/bootstrap.bundle.min.js"></script>
         <script src="./assets/js/aos.js"></script>
         <script src="./assets/js/main.js"></script>
+        <script src="./assets/js/translate.js"></script>
+        <script src="./assets/js/index.js"></script>
     </body>
 </html>
