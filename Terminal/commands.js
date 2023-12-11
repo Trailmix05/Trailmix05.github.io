@@ -73,5 +73,6 @@ banner = [
     '=======================================================================',
     '<span class="color2">Bienvenu sur mon portfolio</span>',
     "<span class=\"color2\">Pour une liste des commandes, taper: </span> <span class=\"command\">'help'</span><span class=\"color2\">.</span>",
-    "<span class=color2>Pour commencer à taper les commandes, cliquez après</class> visitors@zacharyivars.com:~$"
+    "<span class=color2>Pour commencer à taper les commandes, cliquez après</class> visitors@zacharyivars.com:~$",
+    "Un grand remerciment aussi @ForrestKnight d'avoir fait le tuto pour ce site: <a href='https://www.youtube.com/watch?v=KtYby2QN0kQ' target='_blank'>I made a TERMINAL website, with HIDDEN Easter eggs</a>"
 ];
