@@ -1,0 +1,8 @@
+var language = {
+    eng: {
+
+    },
+    fr: {
+
+    }
+};
