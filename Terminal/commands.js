@@ -1,7 +1,7 @@
 var linkedin = "https://www.linkedin.com/in/zachary-ivars/";
 var numtel = '+33 06 95 00 33 72'
 var pentester = 'https://www.cidj.com/metiers/pentester'
-
+var software = 'https://www.jobijoba.com/fr/fiches-metiers/Ingenieur+logiciel'
 whoami = [
     "<br>",
     "Prénom: Zachary",
@@ -31,7 +31,8 @@ contact = [
 projets = [
     "<br>",
     "<strong>Objectif:</strong> Devenir Pentester/Hackeur Éthique",
-    '<a href="' + pentester + '" target="_blank">[* Plus d\'informations sur le métier]' + "</a>",
+    '<a href="' + pentester + '" target="_blank">[* Plus d\'informations sur le métier de Pentester]' + "</a>",
+    '<a href="' + software + '" target="_blank">[* Plus d\'informations sur le métier Ingénieur Logiciel]' + "</a>",
     "",
     "- Études:",
     "==========",
@@ -43,7 +44,11 @@ projets = [
     '<strong>Choix 2:</strong>',
     "- MIT : Massachussets Institute of Technology",
     "- Partir sur le marché du travail",
-    "<br>"
+    "<br>",
+    '<strong>Choix 3:</strong>',
+    "- Changer pour un cursus plus exigeant",
+    "* Prépa MP2I",
+    "* CUPGE Informatique"
 ];
 
 parcours = [
