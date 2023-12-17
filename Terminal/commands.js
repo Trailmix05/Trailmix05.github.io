@@ -66,7 +66,7 @@ help = [
     '<span class="command">projets</span>        Mes projets professionnels',
     '<span class="command">parcours</span>       Mon parcours scolaire',
     '<span class="command">contact</span>        Toutes les façons pour me contacter',
-    '<span class="command">history</span>        Affiche les dernières commandes utilisées',
+    '<span class="command">historique</span>        Affiche les dernières commandes utilisées',
     '<span class="command">help</span>           Vous savez ce que cette commande fait',
     '<span class="command">clear</span>          Efface le terminal',
     "<br>",

@@ -66,8 +66,8 @@ parcours = [
 help = [
     "<br>",
     '<span class="command">whoami</span>         Who am I?',
-    '<span class="command">projets</span>        My professional projects',
-    '<span class="command">parcours</span>       My past schooling',
+    '<span class="command">projects</span>        My professional projects',
+    '<span class="command">schooling</span>       My past schooling',
     '<span class="command">contact</span>        Different ways to contact me',
     '<span class="command">history</span>        Shows the last commands used',
     '<span class="command">help</span>           You know what this command does',
