@@ -11,7 +11,7 @@
     --color-base: rgb(0, 102, 102);
     --color-base2: #004c4c	;
     --font-base: "Oswald";
-    --sidbar-width: 240px;
+    --sidbar-width: 15%;
 }
 
 body {
@@ -75,7 +75,7 @@ img {
     color: var(--color-brand);
 }
 
-@media (min-width: 40vw){
+@media (min-width: 70vw){
     .navbar{
         min-height: 100vh;
         width: var(--sidbar-width);
@@ -91,6 +91,10 @@ img {
 }
 
 .navbar .UK-flag-access{
+    width: 30px;
+    height: 30px;
+}
+.navbar .french-flag-access{
     width: 30px;
     height: 30px;
 }
