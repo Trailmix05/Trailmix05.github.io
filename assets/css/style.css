@@ -76,7 +76,7 @@ img {
 }
 
 @media (min-width: 70vw){
-    .navbar::click{
+    .navbar{
         min-height: 100vh;
         width: var(--sidbar-width);
         background: linear-gradient(rgb(0, 102, 102, 0.5), rgb(0, 102, 102, 0.5)), url(../img/sidebar_background.jpg);
