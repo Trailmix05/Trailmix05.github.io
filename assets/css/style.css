@@ -75,7 +75,7 @@ img {
     color: var(--color-brand);
 }
 
-@media (min-width: 70vw){
+@media (min-width: 40vw){
     .navbar{
         min-height: 100vh;
         width: var(--sidbar-width);
