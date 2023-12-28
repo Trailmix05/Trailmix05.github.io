@@ -11,7 +11,7 @@
     --color-base: rgb(0, 102, 102);
     --color-base2: #004c4c	;
     --font-base: "Oswald";
-    --sidbar-width: 240px ;
+    --sidbar-width: 180px ;
 }
 
 body {
@@ -97,6 +97,11 @@ img {
 .navbar .french-flag-access{
     width: 30px;
     height: 30px;
+}
+
+.navbar .navbar-toggler-icon{
+    width: 20px;
+    height: 20px;
 }
 
 /* CONTENT WRAPPER */
