@@ -24,7 +24,7 @@ contact = [
     'discord                     _trailmix',
     'linkedin                    <a href="' + linkedin + '" target="_blank">linkedin/zacharyivars' + "</a>",
     'numéro téléphone            ' + numtel,
-    'courrier éléctronique       <a href="mailto:zacharyivars@icloud.com">zacharyivars@icloud.com</a>"',
+    'courrier éléctronique       <a href="mailto:zacharyivars@icloud.com">zacharyivars@icloud.com</a>',
     "<br>"
 ];
 
