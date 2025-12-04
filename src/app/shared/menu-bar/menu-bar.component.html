@@ -1,0 +1,56 @@
+<header class="header-bar">
+	<nz-row nzGutter="[24, 24]">
+		<nz-col nzSpan="3">
+			<nz-row class="menu-title" nzJustify="center"
+				><a routerLink=""><i nz-icon nzType="home" nzTheme="fill" class="icon"></i>Home</a>
+			</nz-row>
+		</nz-col>
+		<nz-col nzSpan="11">&nbsp;</nz-col>
+		<nz-col nzSpan="2">
+			<nz-row nzJustify="center"
+				><a routerLink="/projects"
+					><i nz-icon nzType="folder" nzTheme="fill" class="icon"></i>Projects</a
+				></nz-row
+			>
+		</nz-col>
+		<nz-col nzSpan="3">
+			<nz-row nzJustify="center"
+				><a routerLink="/experience-CV"
+					><i nz-icon nzType="book" nzTheme="fill" class="icon"></i>Experience/CV</a
+				></nz-row
+			>
+		</nz-col>
+		<nz-col nzSpan="3">
+			<nz-row nzJustify="center"
+				><a routerLink="/mobility"
+					><i nz-icon nzType="flag" nzTheme="fill" class="icon"></i>International
+					Mobility</a
+				></nz-row
+			>
+		</nz-col>
+		<nz-col nzSpan="2">
+			<nz-row nzJustify="center"
+				><a routerLink="/csr"
+					><i nz-icon nzType="gift" nzTheme="fill" class="icon"></i>CSR</a
+				></nz-row
+			>
+		</nz-col>
+		<!-- 
+        <nz-col nzSpan="2">
+			<nz-row nzJustify="center">
+				<a nz-dropdown [nzDropdownMenu]="languageDropdown">
+					Languages
+					<i nz-icon nzType="right" class="arrow-icon"></i>
+				</a>
+			</nz-row>
+		</nz-col>
+        -->
+	</nz-row>
+</header>
+
+<nz-dropdown-menu #languageDropdown="nzDropdownMenu">
+	<ul nz-menu nzSelectable>
+		<li nz-menu-item>English</li>
+		<li nz-menu-item>French</li>
+	</ul>
+</nz-dropdown-menu>

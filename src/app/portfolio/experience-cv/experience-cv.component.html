@@ -1,0 +1,162 @@
+<nz-row [nzGutter]="[24, 24]" nzJustify="center">
+	<nz-col [nzSpan]="12">
+		<nz-row nzJustify="center"
+			><h2>
+				<button nz-button nzType="primary" style="color: #fcfcce">CV v.English</button>
+			</h2>
+		</nz-row>
+	</nz-col>
+	<nz-col [nzSpan]="12">
+		<nz-row nzJustify="center"
+			><h2>
+				<button nz-button nzType="primary" style="color: #fcfcce">CV v.French</button>
+			</h2>
+		</nz-row>
+	</nz-col>
+</nz-row>
+
+<nz-collapse nzGhost nzAccordion>
+	<ng-template #workHeaderTemplate>
+		<nz-row nzJustify="center" nzAlign="middle">
+			<span>Work Experience</span>
+			<span style="font-size: 12px; padding-left: 1vw; color: rgb(180, 179, 179)"
+				>click me!</span
+			>
+		</nz-row>
+	</ng-template>
+
+	<ng-template #mentorHeaderTemplate>
+		<nz-row nzJustify="center" nzAlign="middle">
+			<span>Mentor/Tutor</span>
+			<span style="font-size: 12px; padding-left: 1vw; color: rgb(180, 179, 179)"
+				>click me!</span
+			>
+		</nz-row>
+	</ng-template>
+
+	<nz-collapse-panel nzActive="true" nzShowArrow="false" [nzHeader]="workHeaderTemplate">
+		<nz-row>
+			<nz-col [nzSpan]="12">
+				<nz-col [nzSpan]="14" nzOffset="5">
+					<nz-row nzJustify="center">
+						<h2>Apprenticeship</h2>
+					</nz-row>
+					<nz-card nzTitle="Collins Aerospace" [nzHoverable]="true">
+						<p><b>Objective:</b></p>
+						<p>
+							Develop internal tools that will be used by the senior engineers. Use
+							different avionics protocoles in the internal tools.
+						</p>
+						<p><b>Technologies:</b></p>
+						<ul>
+							<li>Django</li>
+							<li>NinjaAPI</li>
+							<li>REACT</li>
+							<li>Various avionics protocoles</li>
+						</ul>
+					</nz-card>
+					<nz-card nzTitle="AMC" [nzHoverable]="true">
+						<p><b>Objective:</b></p>
+						<p>
+							Develop and maintain the app suite CapitalExplorer (wealth management
+							application for professionals). Redo the applications done in ASPX in
+							Angular and C#.
+						</p>
+						<p><b>Technologies:</b></p>
+						<ul>
+							<li>Angular</li>
+							<li>C#</li>
+							<li>Azure</li>
+							<li>Azure DevOps</li>
+							<li>Jira</li>
+						</ul>
+					</nz-card>
+				</nz-col>
+			</nz-col>
+			<nz-col [nzSpan]="12">
+				<nz-col [nzSpan]="14" nzOffset="5">
+					<nz-row nzJustify="center"> <h2>Summer/Seasonal jobs</h2></nz-row>
+					<nz-card nzTitle="Server" [nzHoverable]="true">
+						<p>
+							During my work at a bistro in Rodez, I learned essential skills such as
+							managing some personnel, managing customer orders and having task
+							priority, time management and compromisation...
+							<br />
+							All of this has helped me during various school and work projects,
+							managing class mates as the class president and vice-president. I
+							believe that these skills will become even more applicable as time goes
+							on.
+						</p>
+					</nz-card>
+					<nz-card nzTitle="Helper for day camp" [nzHoverable]="true">
+						<p>
+							During my time at a vacation center, I learned valuable lessons and
+							skills such as having patience, being able to manage different emotions
+							from small difficult humans (kids).
+						</p>
+					</nz-card>
+				</nz-col>
+			</nz-col>
+		</nz-row>
+	</nz-collapse-panel>
+
+	<nz-collapse-panel nzActive="false" nzShowArrow="false" [nzHeader]="mentorHeaderTemplate">
+		<nz-row [nzGutter]="[24, 12]">
+			<nz-col [nzSpan]="6" nzOffset="1">
+				<nz-row nzAlign="middle" nzJustify="center">
+					<nz-card nzTitle="Jean-Marc BLANC" [nzHoverable]="true">
+						<p>
+							Jean-Marc BLANC is a Software Engineer, having worked on various
+							projects and holding 2 diplomas (an electronique engineering degree, and
+							a PhD in cognitive sciences). He works as a consultant, working for
+							Capgemini and other companies. He does very interesting work on most
+							parts of computer science, be it software development, AI, devsecops or
+							other parts.
+							<br />
+							I was filled with confidence when I heard his story, knowing that every
+							kind of profile and background can find their place in Computer Science.
+						</p>
+					</nz-card>
+				</nz-row>
+			</nz-col>
+			<nz-col [nzSpan]="6" nzOffset="2">
+				<nz-row nzAlign="middle" nzJustify="center">
+					<nz-card nzTitle="Callune GITENET" [nzHoverable]="true">
+						<p>
+							Callune GITENET is an alumni from Blagnac Institute of Technology, and
+							he has been a big help during my studies and in serach for a work study
+							company. Interacting with him has been a joy, learning about his story
+							and how he has gotten to this point as a software developer for
+							Capgemini, going to the same schools and having a successful career. He
+							has been very insightful and advising during the creation and
+							modification of my CV, posting to different job offers at Capgemini
+							along with others, and helping me get the confidence to apply to
+							ENSEEIHT. Thanks to his help, verification and advice, I was able to
+							find a very similar path, trying to get an engineering degree at
+							ENSEEIHT and find a good company afterwards.
+						</p>
+					</nz-card>
+				</nz-row>
+			</nz-col>
+			<nz-col [nzSpan]="6" nzOffset="2">
+				<nz-row nzAlign="middle" nzJustify="center">
+					<nz-card nzTitle="Anthony DENIAU" [nzHoverable]="true">
+						<p>
+							In my short time working with Anthony, it has been a delight and
+							eye-opening. It is clear that he is a master of his work. He has a deep
+							understanding of different frameworks, AI models, presentations,
+							everything. It is motivating to be his apprentice, and his intelligence
+							pushes me to go further, do better and find new solutions. It's also
+							motivated me to try and start new projects, pick up old ones, and be
+							more strict and rigorous with my work. In addition to everything, we
+							have very similar backgrounds, starting with an associates and ending up
+							with an engineering degree, working for Collins Aerospace. It is blatant
+							that he is someone to look up, and try and be like for a professional
+							career.
+						</p>
+					</nz-card>
+				</nz-row>
+			</nz-col>
+		</nz-row>
+	</nz-collapse-panel>
+</nz-collapse>

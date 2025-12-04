@@ -1,0 +1,59 @@
+@for (row of chunkedProjects; track row) {
+	<nz-row [nzGutter]="[24, 24]">
+		@for (project of row; track project) {
+			<nz-col nzSpan="6" nzOffset="2" style="text-align: center; margin-bottom: 15px">
+				<img
+					[src]="'assets/images/flags/Flag_of_' + project.country + '.svg'"
+					[alt]="'Flag of project.country'"
+					class="image"
+					(click)="showModal(project.id)" />
+				<br />
+				{{ project.title }}
+				<ng-container
+					*ngTemplateOutlet="
+						mobilityProjectTemplate;
+						context: {
+							projectId: project.id,
+							title: project.title,
+							content: project.description,
+							duration: project.duration,
+							location: project.location,
+							country: project.country,
+							type: project.type,
+						}
+					">
+				</ng-container>
+			</nz-col>
+		}
+	</nz-row>
+}
+
+<ng-template
+	#mobilityProjectTemplate
+	let-projectId="projectId"
+	let-title="title"
+	let-content="content"
+	let-duration="duration"
+	let-location="location"
+	let-country="country"
+	let-type="type">
+	<nz-modal
+		[(nzVisible)]="isVisible[projectId]"
+		[nzTitle]="title"
+		(nzOnCancel)="closeModal(projectId)"
+		(nzOnOk)="closeModal(projectId)">
+		<ng-container *nzModalContent>
+			<h3>{{ country }} - {{ location }}</h3>
+			<br />
+			{{ content }}
+			<ul>
+				<li>
+					<b>Type: </b> <i>{{ type }}</i>
+				</li>
+				<li>
+					<b>Duration: </b> <i>{{ duration }}</i>
+				</li>
+			</ul>
+		</ng-container>
+	</nz-modal>
+</ng-template>

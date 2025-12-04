@@ -1,0 +1,51 @@
+<div class="carousel-section">
+	<div class="carousel-item carousel-item-prev" (click)="prevSlide()">
+		<img [src]="getPreviousItem().image" [alt]="getPreviousItem().title" />
+		<div class="item-title">{{ getPreviousItem().title }}</div>
+	</div>
+
+	<div class="carousel-item carousel-item-current">
+		<img
+			[src]="getCurrentItem().image"
+			[alt]="getCurrentItem().title"
+			(click)="showModal(getCurrentItem().id)" />
+		<div class="item-title-main">{{ getCurrentItem().title }}</div>
+		<ng-container
+			*ngTemplateOutlet="
+				projectTemplate;
+				context: {
+					projectId: getCurrentItem().id,
+					title: getCurrentItem().title,
+					content: getCurrentItem().description,
+				}
+			">
+		</ng-container>
+	</div>
+
+	<div class="carousel-item carousel-item-next" (click)="nextSlide()">
+		<img [src]="getNextItem().image" [alt]="getNextItem().title" />
+		<div class="item-title">{{ getNextItem().title }}</div>
+	</div>
+</div>
+
+<div class="description-section">
+	<div class="description-content">
+		<h2 class="description-title">
+			{{ getCurrentItem().title }}
+		</h2>
+		Click on the image to get more information!
+		<br />
+	</div>
+</div>
+
+<ng-template #projectTemplate let-projectId="projectId" let-title="title" let-content="content">
+	<nz-modal
+		[(nzVisible)]="isVisible[projectId]"
+		[nzTitle]="title"
+		(nzOnCancel)="closeModal(projectId)"
+		(nzOnOk)="closeModal(projectId)">
+		<ng-container *nzModalContent>
+			{{ content }}
+		</ng-container>
+	</nz-modal>
+</ng-template>

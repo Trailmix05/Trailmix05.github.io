@@ -1,0 +1,45 @@
+@import '../../../styles.less';
+@import '../../app.component.less';
+
+.menu-title {
+	align-content: end;
+}
+
+.header-bar {
+	text-align: center;
+	background-color: @bar-color;
+	color: #fcfcce;
+	padding: 1rem 0;
+	width: 100%;
+}
+
+a {
+	color: #fcfcce;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.25rem;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #7a7a27;
+}
+
+a:hover .icon {
+	color: #7a7a27;
+}
+
+.arrow-icon {
+	display: inline-block;
+	transition: transform 0.3s ease;
+
+	vertical-align: middle;
+}
+
+a[nz-dropdown]:hover .arrow-icon {
+	transform: rotate(90deg);
+}
+
+a.ant-dropdown-open .arrow-icon {
+	transform: rotate(90deg);
+}

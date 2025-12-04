@@ -1,0 +1,36 @@
+.app-container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.app-content {
+	padding: 1em;
+	flex: 1;
+}
+
+nz-card {
+	overflow: hidden;
+	border-radius: 20px;
+	margin-bottom: 40px;
+	cursor: default;
+}
+
+nz-card ::ng-deep .ant-card-head {
+	background: #ffe596;
+}
+
+nz-card ::ng-deep .ant-card-body {
+	background: #75908e;
+	color: white;
+}
+
+.icon {
+	color: #fcfcce;
+	transition: color 0.2s;
+	margin-right: 1vw;
+}
+
+.icon:hover {
+	color: #7a7a27;
+}
