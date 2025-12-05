@@ -19,7 +19,7 @@ interface MobilityProject {
 	standalone: true,
 	imports: [NzModalModule, NgTemplateOutlet, NzGridModule],
 	templateUrl: './mobility.component.html',
-	styleUrl: './mobility.component.less',
+	styleUrls: ['./mobility.component.less', '../../app.component.less'],
 })
 export class MobilityComponent {
 	isVisible: boolean[] = []

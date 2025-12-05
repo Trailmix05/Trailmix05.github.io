@@ -14,10 +14,12 @@ interface PortfolioItem {
 	standalone: true,
 	imports: [CommonModule, NzModalModule],
 	templateUrl: './projects.component.html',
-	styleUrl: './projects.component.less',
+	styleUrls: ['./projects.component.less', '../../app.component.less'],
 })
 export class ProjectsComponent {
 	currentIndex = 0
+
+	totalProjects: number = 0
 
 	isVisible: boolean[] = []
 
@@ -63,6 +65,8 @@ export class ProjectsComponent {
 		for (let _ = 0; _ < this.portfolioItems.length; _++) {
 			this.isVisible.push(false)
 		}
+
+		this.totalProjects = this.portfolioItems.length
 	}
 
 	nextSlide(): void {

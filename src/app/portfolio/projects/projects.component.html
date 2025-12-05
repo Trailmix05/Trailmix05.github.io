@@ -28,6 +28,39 @@
 	</div>
 </div>
 
+<div class="carousel-indicator">
+	<div class="indicator-controls">
+		<button class="arrow-btn" (click)="prevSlide()" aria-label="Previous project">
+			<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+				<path
+					d="M10 12L6 8L10 4"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round" />
+			</svg>
+		</button>
+		<div class="indicator-dots">
+			<span
+				*ngFor="let item of portfolioItems; let i = index"
+				class="dot"
+				[class.active]="i === currentIndex"
+				(click)="goToSlide(i)">
+			</span>
+		</div>
+		<button class="arrow-btn" (click)="nextSlide()" aria-label="Next project">
+			<svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+				<path
+					d="M6 12L10 8L6 4"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round" />
+			</svg>
+		</button>
+	</div>
+</div>
+
 <div class="description-section">
 	<div class="description-content">
 		<h2 class="description-title">
@@ -45,7 +78,9 @@
 		(nzOnCancel)="closeModal(projectId)"
 		(nzOnOk)="closeModal(projectId)">
 		<ng-container *nzModalContent>
-			{{ content }}
+			<p style="text-align: justify">
+				{{ content }}
+			</p>
 		</ng-container>
 	</nz-modal>
 </ng-template>
