@@ -55,7 +55,7 @@ export class ProjectsComponent {
 		{
 			id: 5,
 			title: 'Collins Aerospace',
-			image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
+			image: 'assets/images/projects/logo-collins.svg',
 			description:
 				'At my current workstudy (Colins Aerospace) I can work on multiple projects. These projects are important because they facilitate and help pilots, airlines, crew along with the fabricants. Planes are a very important means of transport nowadays, and being able to alleviate the workload is extremely important. I understand the importance with what I work on, and it makes me even more passionate with my work.',
 		},
